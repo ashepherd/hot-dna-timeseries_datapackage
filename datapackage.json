@@ -1,22 +1,22 @@
 {
-  "@context":{
-    "_id": "_id",
+  "@context": {
+    "_id": "@id",
     "_type": "@type",
     "_geolink": "http://schema.geolink.org/1.0/base/main",
     "_odo": "http://ocean-data.org/schema/",
+    "_rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "_units": "odo:hasUnitOfMeasure",
     "_parameter_description": "odo:hasParameterShortDescription"
   },
   "_type": "_geolink:Dataset",
   "profile": "tabular-data-package",
   "name": "cmore_dna_timeseries_555520_20150401",
-  "id": "doi:10.1575/bcodmo.123456789abcdef"
+  "id": "doi:10.1575/bcodmo.123456789abcdef",
   "title": "DNA metagenomic library statistics from HOT cruises from 2007-2009 (C-MORE project, HOT project)",
   "description": "<p>HOT DNA metagenomic library statistics</p><p>Location: The vicinity of Station ALOHA (22.75 N, 158.0 W) just north of Hawaii.</p><p><strong>CMORE RNA and DNA Archive </strong></p><p><strong>Goal:</strong> The goal of this effort is to provide a time series collection of planktonic microbial DNA and RNA depth profiles from the HOT station, for CMORE research. DNA and RNA samples will be available for researchers to conduct and coordinate taxonomic and functional gene studies, for example using PCR and RT-PCR methods. Sequencing files are available as an NCBI BioProject (<a href=\"http://www.ncbi.nlm.nih.gov/bioproject/PRJNA16339\" target=\"_blank\">PRJNA16339</a>)</p><p><strong>Activity:</strong> Collect microbial cell fraction (1.6um prefiltered, &gt;0.22um) from HOT hydrocasts, and extract nucleic acids, for RNA and DNA for downstream analyses by CMORE investigators. Collection depths are 25m, 45m, 75m, 125m, 200m, 500m, 770m and 1000m. Extracted DNA samples will be available for distribution.</p>",
   "homepage": "https://www.bco-dmo.org/dataset/555520",
   "created": "2017-08-01T15:59:50.52Z",
-  "contributors": [
-    {
+  "contributors": [{
       "name": "Dr Edward DeLong",
       "path": "http://www.bco-dmo.org/person/51099",
       "role": "author",
@@ -28,7 +28,7 @@
       "name": "Jasmine Nahorniak",
       "path": "http://www.bco-dmo.org/person/51097",
       "role": "maintainer",
-      "organization": "Oregon State University (OSU-CEOAS)"
+      "organization": "Oregon State University (OSU-CEOAS)",
       "_id": "http://lod.bco-dmo.org/id/person/51097",
       "_type": "_geolink:Person"
     },
@@ -36,7 +36,7 @@
       "name": "Mr. Steven R. Gegg",
       "path": "http://www.bco-dmo.org/person/50910",
       "role": "wrangler",
-      "organization": "Woods Hole Oceanographic Institution (WHOI BCO-DMO)"
+      "organization": "Woods Hole Oceanographic Institution (WHOI BCO-DMO)",
       "_id": "http://lod.bco-dmo.org/id/person/50910",
       "_type": "_geolink:Person"
     },
@@ -55,131 +55,142 @@
     "web": "https://creativecommons.org/licenses/by/4.0/",
     "title": "Creative Commons Attribution 4.0"
   }],
-  "resources":[
-    {
-      "profile": "tabular-data-resource",
-      "name": "cmore_dna_timeseries_555520_20150401.tsv",
-      "path": "dna_timeseries.tsv",
-      "format": "tsv",
-      "mediatype": "text/tsv",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "cruise_id",
-            "type": "string",
-            "title": "cruise ID",
-            "description": "cruise ID",
-            "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555530",
-            "_units": "dimensionless",
-            "_type": "http://lod.bco-dmo.org/id/parameter/1102",
-            "_parameter_description": "cruise id"
-          },
-          {
-            "name": "lat",
-            "type": "float",
-            "title": "lat",
-            "description": "latitude (positive north)",
-            "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555531",
-            "_units": "decimal degrees",
-            "_type": "http://lod.bco-dmo.org/id/parameter/730",
-            "_parameter_description": "latitude"
-          },
-          {
-            "name": "lon",
-            "type": "float",
-            "title": "lon",
-            "description": "longitude (positive east)",
-            "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555532",
-            "_units": "decimal degrees",
-            "_type": "http://lod.bco-dmo.org/id/parameter/731",
-            "_parameter_description": "longitude"
-          },
-          {
-            "name": "sample",
-            "type": "string",
-            "title": "sample ID",
-            "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555533",
-            "_units": "dimensionless",
-            "_type": "http://lod.bco-dmo.org/id/parameter/960",
-            "_parameter_description": "sample identification"
-          },
-          {
-            "name": "depth",
-            "type": "integer",
-            "title": "depth",
-            "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555534",
-            "_units": "meters",
-            "_type": "http://lod.bco-dmo.org/id/parameter/808",
-            "_parameter_description": "depth"
-          },
-          {
-            "name": "date",
-            "type": "string",
-            "title": "date",
-            "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555535",
-            "_units": "YYYYMMDD",
-            "_type": "http://lod.bco-dmo.org/id/parameter/1070",
-            "_parameter_description": "date"
-          },
-          {"name": "time",
-            "type": "integer",
-            "title": "time (GMT)",
-            "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555536",
-            "_units": "HHMM",
-            "_type": "http://lod.bco-dmo.org/id/parameter/1075",
-            "_parameter_description": "time of day"
-          },
-          {
-            "name": "sequencing_chemistry",
-            "type": "string",
-            "title": "sequencing chemistry",
-            "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555537",
-            "_units": "dimensionless"
-          },
-          {
-            "name": "non_dup_reads",
-            "type": "integer",
-            "title": "number of non duplicated reads",
-            "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555538",
-            "_units": "dimensionless"
-          },
-          {
-            "name": "16S_reads",
-            "type": "integer",
-            "title": "number of 16S reads",
-            "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555539",
-            "_units": "dimensionless"
-          },
-          {
-            "name": "read_length",
-            "type": "float",
-            "title": "average read length",
-            "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555540",
-            "_units": "dimensionless"
-          },
-          {
-            "name": "SRX",
-            "type": "string",
-            "title": "NCBI SRX accession number",
-            "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555541",
-            "_units": "dimensionless"
-          },
-        ]
-      },
-      "dialect": {
-        "delimiter": "\t",
-        "lineTerminator": "\r\n",
-        "header": true
-      },
-      "bytes": 6826,
-      "hash": "MD5:9f11028336364f7de49e3cf185c14c64"
-    }
-  ],
+  "resources": [{
+    "profile": "tabular-data-resource",
+    "name": "cmore_dna_timeseries_555520_20150401.tsv",
+    "path": "dna_timeseries.tsv",
+    "format": "tsv",
+    "mediatype": "text/tsv",
+    "encoding": "utf-8",
+    "schema": {
+      "fields": [{
+          "name": "cruise_id",
+          "type": "string",
+          "title": "cruise ID",
+          "description": "cruise ID",
+          "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555530",
+          "_units": "dimensionless",
+          "_type": "http://lod.bco-dmo.org/id/parameter/1102",
+          "_parameter_description": "cruise id"
+        },
+        {
+          "name": "lat",
+          "type": "float",
+          "title": "lat",
+          "description": "latitude (positive north)",
+          "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555531",
+          "_units": "decimal degrees",
+          "_type": "http://lod.bco-dmo.org/id/parameter/730",
+          "_parameter_description": "latitude"
+        },
+        {
+          "name": "lon",
+          "type": "float",
+          "title": "lon",
+          "description": "longitude (positive east)",
+          "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555532",
+          "_units": "decimal degrees",
+          "_type": "http://lod.bco-dmo.org/id/parameter/731",
+          "_parameter_description": "longitude"
+        },
+        {
+          "name": "sample",
+          "type": "string",
+          "title": "sample ID",
+          "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555533",
+          "_units": "dimensionless",
+          "_type": "http://lod.bco-dmo.org/id/parameter/960",
+          "_parameter_description": "sample identification"
+        },
+        {
+          "name": "depth",
+          "type": "integer",
+          "title": "depth",
+          "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555534",
+          "_units": "meters",
+          "_type": "http://lod.bco-dmo.org/id/parameter/808",
+          "_parameter_description": "depth"
+        },
+        {
+          "name": "date",
+          "type": "string",
+          "title": "date",
+          "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555535",
+          "_units": "YYYYMMDD",
+          "_type": "http://lod.bco-dmo.org/id/parameter/1070",
+          "_parameter_description": "date"
+        },
+        {
+          "name": "time",
+          "type": "integer",
+          "title": "time (GMT)",
+          "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555536",
+          "_units": "HHMM",
+          "_type": "http://lod.bco-dmo.org/id/parameter/1075",
+          "_parameter_description": "time of day"
+        },
+        {
+          "name": "sequencing_chemistry",
+          "type": "string",
+          "title": "sequencing chemistry",
+          "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555537",
+          "_units": "dimensionless"
+        },
+        {
+          "name": "non_dup_reads",
+          "type": "integer",
+          "title": "number of non duplicated reads",
+          "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555538",
+          "_units": "dimensionless"
+        },
+        {
+          "name": "16S_reads",
+          "type": "integer",
+          "title": "number of 16S reads",
+          "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555539",
+          "_units": "dimensionless"
+        },
+        {
+          "name": "read_length",
+          "type": "float",
+          "title": "average read length",
+          "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555540",
+          "_units": "dimensionless"
+        },
+        {
+          "name": "SRX",
+          "type": "string",
+          "title": "NCBI SRX accession number",
+          "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555541",
+          "_units": "dimensionless"
+        }
+      ]
+    },
+    "dialect": {
+      "delimiter": "\t",
+      "lineTerminator": "\r\n",
+      "header": true
+    },
+    "bytes": 6826,
+    "hash": "MD5:9f11028336364f7de49e3cf185c14c64"
+  }],
   "sources": [
     {
-      "title": "",
-      "path": ""
+      "title": "Cruise: KM0714",
+      "path": "http://www.rvdata.us/catalog/KM0714",
+      "_id": "http://data.rvdata.us/cruise/KM0714",
+      "_type": "_geolink:Cruise",
+      "_odo:hasSynonym": ["HOT-194", "194"]
+    },
+    {
+      "title": "Award: OCE-0926766",
+      "path": "http://www.bco-dmo.org/award/54915",
+      "_id": "http://lod.bco-dmo.org/id/award/54915",
+      "_type": "_geolink:Award",
+      "_odo:hasFundingSource": {
+        "_id": "http://lod.bco-dmo.org/id/funding/355",
+        "_rdfs:label": "NSF Division of Ocean Sciences"
+      }
     }
   ]
 }
