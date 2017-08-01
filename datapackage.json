@@ -75,7 +75,7 @@
         },
         {
           "name": "lat",
-          "type": "float",
+          "type": "number",
           "title": "lat",
           "description": "latitude (positive north)",
           "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555531",
@@ -85,7 +85,7 @@
         },
         {
           "name": "lon",
-          "type": "float",
+          "type": "number",
           "title": "lon",
           "description": "longitude (positive east)",
           "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555532",
@@ -152,7 +152,7 @@
         },
         {
           "name": "read_length",
-          "type": "float",
+          "type": "number",
           "title": "average read length",
           "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555540",
           "_units": "dimensionless"
@@ -174,14 +174,16 @@
     "bytes": 6826,
     "hash": "MD5:9f11028336364f7de49e3cf185c14c64"
   }],
-  "sources": [
+  "_cruises": [
     {
       "title": "Cruise: KM0714",
       "path": "http://www.rvdata.us/catalog/KM0714",
       "_id": "http://data.rvdata.us/cruise/KM0714",
       "_type": "_geolink:Cruise",
       "_odo:hasSynonym": ["HOT-194", "194"]
-    },
+    }
+  ],
+  "_awards": [
     {
       "title": "Award: OCE-0926766",
       "path": "http://www.bco-dmo.org/award/54915",
