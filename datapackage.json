@@ -2,7 +2,7 @@
   "@context": {
     "_id": "@id",
     "_type": "@type",
-    "_geolink": "http://schema.geolink.org/1.0/base/main",
+    "_geolink": "http://schema.geolink.org/1.0/base/main#",
     "_odo": "http://ocean-data.org/schema/",
     "_rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "_units": "odo:hasUnitOfMeasure",
