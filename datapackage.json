@@ -97,6 +97,7 @@
           "name": "sample",
           "type": "string",
           "title": "sample ID",
+          "description": "sample ID",
           "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555533",
           "_units": "dimensionless",
           "_type": "http://lod.bco-dmo.org/id/parameter/960",
@@ -106,6 +107,7 @@
           "name": "depth",
           "type": "integer",
           "title": "depth",
+          "description": "depth",
           "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555534",
           "_units": "meters",
           "_type": "http://lod.bco-dmo.org/id/parameter/808",
@@ -115,6 +117,7 @@
           "name": "date",
           "type": "string",
           "title": "date",
+          "description": "date",
           "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555535",
           "_units": "YYYYMMDD",
           "_type": "http://lod.bco-dmo.org/id/parameter/1070",
@@ -124,6 +127,7 @@
           "name": "time",
           "type": "integer",
           "title": "time (GMT)",
+          "description": "time (GMT)",
           "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555536",
           "_units": "HHMM",
           "_type": "http://lod.bco-dmo.org/id/parameter/1075",
@@ -133,6 +137,7 @@
           "name": "sequencing_chemistry",
           "type": "string",
           "title": "sequencing chemistry",
+          "description": "sequencing chemistry",
           "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555537",
           "_units": "dimensionless"
         },
@@ -140,6 +145,7 @@
           "name": "non_dup_reads",
           "type": "integer",
           "title": "number of non duplicated reads",
+          "description": "number of non duplicated reads",
           "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555538",
           "_units": "dimensionless"
         },
@@ -147,6 +153,7 @@
           "name": "16S_reads",
           "type": "integer",
           "title": "number of 16S reads",
+          "description": "number of 16S reads",
           "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555539",
           "_units": "dimensionless"
         },
@@ -154,6 +161,7 @@
           "name": "read_length",
           "type": "number",
           "title": "average read length",
+          "description": "average read length",
           "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555540",
           "_units": "dimensionless"
         },
@@ -161,6 +169,7 @@
           "name": "SRX",
           "type": "string",
           "title": "NCBI SRX accession number",
+          "description": "NCBI SRX accession number",
           "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555541",
           "_units": "dimensionless"
         }
