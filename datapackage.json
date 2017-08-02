@@ -139,7 +139,8 @@
           "title": "sequencing chemistry",
           "description": "sequencing chemistry",
           "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555537",
-          "_units": "dimensionless"
+          "_units": "dimensionless",
+          "_parameter_description": NULL
         },
         {
           "name": "non_dup_reads",
@@ -147,7 +148,8 @@
           "title": "number of non duplicated reads",
           "description": "number of non duplicated reads",
           "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555538",
-          "_units": "dimensionless"
+          "_units": "dimensionless",
+          "_parameter_description": NULL
         },
         {
           "name": "16S_reads",
@@ -155,7 +157,8 @@
           "title": "number of 16S reads",
           "description": "number of 16S reads",
           "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555539",
-          "_units": "dimensionless"
+          "_units": "dimensionless",
+          "_parameter_description": NULL
         },
         {
           "name": "read_length",
@@ -163,7 +166,8 @@
           "title": "average read length",
           "description": "average read length",
           "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555540",
-          "_units": "dimensionless"
+          "_units": "dimensionless",
+          "_parameter_description": NULL
         },
         {
           "name": "SRX",
@@ -171,7 +175,8 @@
           "title": "NCBI SRX accession number",
           "description": "NCBI SRX accession number",
           "_id": "http://lod.bco-dmo.org/id/dataset-parameter/555541",
-          "_units": "dimensionless"
+          "_units": "dimensionless",
+          "_parameter_description": NULL
         }
       ]
     },
